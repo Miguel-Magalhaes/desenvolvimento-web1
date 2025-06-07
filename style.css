@@ -30,11 +30,20 @@ body {
     cursor: pointer;
 }
 
+.cabecalho a {
+    text-decoration: none;
+    color: #F2E6C9;
+}
+
 .icones-cabecalho {
     display: flex;
     align-items: center;
     gap: 50px;
     margin-left: 8%;
+}
+
+.dropdown-menu a {
+    color: #6d6d6d;
 }
 
 .cabecalho i {
