@@ -28,7 +28,7 @@ body {
     align-items: center;
     gap: 60px;
     padding: 1% 0;
-    background-color: var(--cor-fundo-cabecalho);
+    background-color: var(--cor-primaria-cabecalho);
     color:var(--cor-primaria-texto);
     font-size: 16px;
     position: relative;
@@ -97,6 +97,10 @@ body {
     border-radius: 8px;
 }
 
+.botao-shop:hover, #submit:hover { 
+    box-shadow: 0 0 12px var(--cor-destaque-texto);
+}
+
 .botao-shop a {
     text-align: center;
     text-decoration: none;
@@ -110,10 +114,7 @@ body {
     margin: 1% 0;
     padding: 1% 2%;
 }
-.principal-perfil p{
-    color: var(--cor-destaque-texto);
-}  
-/* Feito por eu, se tiver erro, é aqui */
+
 .secao-titulo {
     display: flex;
     align-items: center;
@@ -202,11 +203,47 @@ body {
     margin-top: 1%;
 }
 
+.botao-classico:hover {
+    box-shadow: 0 0 20px var(--cor-destaque-botao);
+}
+
 .botao-classico a {
     text-align: center;
     text-decoration: none;
     color: var(--cor-destaque-botao);
     font-size: 20px;
+}
+
+.formulario {
+    color: var(--cor-destaque-texto);
+    text-align: start;
+    margin: 0 5%;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 2px solid var(--cor-destaque-texto); 
+    padding: 20px 36px;           
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset input {
+    padding: 0.4%;
+}
+
+legend {
+    text-align: center;
+    font-size: 24px;
+}
+
+.titulo-formulario {
+    text-align: start;
+    color: var(--cor-destaque-texto);
+    margin: 3% 8%;
+    font-size: 24px;
 }
 
 .rodape {
@@ -215,4 +252,22 @@ body {
     margin-top: 8%;
     background-color: var(--cor-primaria-cabecalho);
     padding: 1.4%;
+}
+
+#nome, #mail {
+    width: 40%;
+}
+
+#idade {
+    width: 7%;
+}
+
+#submit {
+    color: var(--cor-destaque-texto);
+    background-color: var(--cor-destaque-botao);
+    border-radius: 8px;
+    border: none;
+    padding: 0.6% 2%;
+    margin-top: 3%;
+    border: 1px solid var(--cor-borda-escura);
 }

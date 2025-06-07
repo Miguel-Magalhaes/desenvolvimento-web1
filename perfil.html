@@ -33,19 +33,48 @@
         </div>
     </header>
     <main class="principal">
-        <p>Crie seu perfil na melhor loja de Games Retrô do Brasil!</p>
-        <form>
+        <p class="titulo-formulario">Crie seu perfil na melhor loja de Games Retrô do Brasil!</p>
+        <form class="formulario">
             <div>
-                <fieldset class="principal-perfil">
-                    <legend><p>Formulário</p></legend>
+                <fieldset>
+                    <legend>Formulário</legend>
                     <div>
-                        <label for="nome"><p>Nome</p></label>
-                        <input type="text" name="nome" id="nome">
+                        <label for="nome"><p>Nome:</p></label>
+                        <input type="text" name="nome" id="nome" required>
                     </div>
                     <div>
-                        <label for="fone"><p>Telefone</p></label>
-                        <input type="tel" name="fone" id="fone" placeholder="(12) 91234-1234" 
-                            pattern="\(\d{2}\) 9\d{4}-\d{4}">
+                        <label for="fone"><p>Telefone:</p></label>
+                        <input type="tel" name="fone" id="fone" pattern="\(\d{2}\) 9\d{4}-\d{4}">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                    <div>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" minlength="8" required>
+                    </div>
+                    <div>
+                        <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+                    <div>
+                        <label>Sexo:</label>
+                        <input type="radio" id="mas" name="sexo" value="masculino">
+                        <label for="mas">Masculino</label>
+                        <input type="radio" id="fem" name="sexo" value="feminino">
+                        <label for="mas">Feminino</label>
+                    </div>
+                    <div>
+                        <label for="obs">Nos conte um pouco sobre suas preferências:</label>
+                        <textarea name="obs" id="obs" rows="6" cols="45"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="promocao" id="promocao">
+                        <label for="promocao">Quero receber promoções e novidades!</label>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit" value="Criar Perfil">
                     </div>
                 </fieldset>
             </div>
