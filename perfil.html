@@ -34,7 +34,7 @@
     </header>
     <main class="principal">
         <p class="titulo-formulario">Crie seu perfil na melhor loja de Games Retrô do Brasil!</p>
-        <form class="formulario">
+        <form class="formulario" name="formulario">
             <div>
                 <fieldset>
                     <legend>Formulário</legend>
@@ -44,7 +44,7 @@
                     </div>
                     <div>
                         <label for="fone"><p>Telefone:</p></label>
-                        <input type="tel" name="fone" id="fone" pattern="\(\d{2}\) 9\d{4}-\d{4}">
+                        <input type="tel" name="fone" id="fone" pattern="\(\d{2}\) 9\d{4}-\d{4}" required>
                     </div>
                     <div>
                         <label for="mail">Email:</label>
@@ -74,7 +74,7 @@
                         <label for="promocao">Quero receber promoções e novidades!</label>
                     </div>
                     <div>
-                        <input type="submit" id="submit" value="Criar Perfil">
+                        <input type="submit" id="submitPerfil" value="Criar Perfil">
                     </div>
                 </fieldset>
             </div>
@@ -83,5 +83,10 @@
     <footer class="rodape">
         <p>&copy; 2025 ArcadeOn. Todos os direitos reservados.</p>
     </footer>
+    <audio id="audioClique">
+        <source src="assets/audio-mario.mp3" type="audio/mp3">
+        Seu navegador não suporta áudio.
+    </audio>
+    <script src="script.js"></script>
 </body>
 </html>

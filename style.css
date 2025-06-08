@@ -97,7 +97,7 @@ body {
     border-radius: 8px;
 }
 
-.botao-shop:hover, #submit:hover { 
+.botao-shop:hover, #submitPerfil:hover { 
     box-shadow: 0 0 12px var(--cor-destaque-texto);
 }
 
@@ -262,7 +262,7 @@ legend {
     width: 7%;
 }
 
-#submit {
+#submitPerfil {
     color: var(--cor-destaque-texto);
     background-color: var(--cor-destaque-botao);
     border-radius: 8px;
