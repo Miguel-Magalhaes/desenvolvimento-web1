@@ -245,6 +245,29 @@ legend {
     margin: 3% 8%;
     font-size: 24px;
 }
+.secao-lojas{
+    justify-content: center;
+    color: var(--cor-destaque-texto);
+}
+.tabela{
+    display: flex;
+    color:var(--cor-primaria-texto);
+    justify-content: center;
+    align-items: center;
+}
+.tabela th{
+    color: var(--cor-destaque-botao);
+}
+.tabela tr{
+    border: 2px solid var(--cor-borda-escura);
+    border-radius: 8px;
+    background-color: var(--cor-fundo-cards);
+}   
+.tabela td, .tabela th {
+    padding: 8px 12px;
+    text-align: center;
+}
+
 
 .rodape {
     text-align: center;
