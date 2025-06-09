@@ -268,6 +268,15 @@ legend {
     text-align: center;
 }
 
+.loja-tabela::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f54e";
+    font-weight: 900;
+    vertical-align: middle;
+    font-size: 24px;
+    margin-right: 12px;
+    color: var(--cor-destaque-texto);
+}
 
 .rodape {
     text-align: center;
