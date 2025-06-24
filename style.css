@@ -303,3 +303,42 @@ legend {
     margin-top: 3%;
     border: 1px solid var(--cor-borda-escura);
 }
+
+.section-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7%;
+    gap: 20%;
+}
+
+.produto {
+    background-color: var(--cor-background-central);
+    padding: 2% 6%;
+    border-radius: 30px;
+    text-align: center;
+    border: 2px solid var(--cor-borda-escura);
+}
+
+.produto img {
+    margin-bottom: 10%;
+}
+
+.produto img + p{
+    font-size: 28px;
+    color: var(--cor-destaque-texto); 
+} 
+
+.produto p {
+    color: #F2E6C9;
+    font-size: 20px;
+}
+
+.botao-produto {
+    background-color: transparent;
+    color: var(--cor-destaque-texto);
+    border: 2px solid var(--cor-destaque-texto);
+    border-radius: 28px;
+    padding: 1.2% 1%;
+    margin-top: 5%;
+}
