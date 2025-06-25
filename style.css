@@ -373,6 +373,7 @@ legend {
 .titulo-sobre {
     color: var(--cor-destaque-texto);
     margin: 3%;
+    text-align: center;
 }
 
 .imagem1 {
@@ -411,4 +412,58 @@ legend {
 .tabela-contato td, .tabela-contato th {
     padding: 8px 8px;
     text-align: center;
+}
+@media(max-width:800px){
+    
+    body{
+        margin: 1rem;
+        font-size: 0.9rem;
+    }
+    .cabecalho{
+        align-items: center;
+        font-size: 0.7rem;
+    }
+
+    .secao-produtos, .section-produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .principal-sobre{
+        justify-content: center;
+        gap: 1rem;
+        margin: 0.9rem;
+    }
+    .card-produtos  {
+        display: flex;
+        width: 30rem;
+        height: auto;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+    .titulo-sobre{
+       justify-content: center;
+    }
+    .principal-sobre img {
+        padding: 0.9rem;
+        width: 100%;
+        height: 30rem;
+    }
+    .tabela-contato {
+        margin: 1rem auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .secao-produtos-classicos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secao-classico {
+        width: 90%;
+    }
 }
