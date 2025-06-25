@@ -29,7 +29,6 @@ body {
     gap: 60px;
     padding: 1% 0;
     background-color: var(--cor-primaria-cabecalho);
-    color:var(--cor-primaria-texto);
     font-size: 16px;
     position: relative;
 }
@@ -41,7 +40,11 @@ body {
 
 .cabecalho a {
     text-decoration: none;
-    color:var(--cor-primaria-texto);
+    color: var(--cor-primaria-texto);
+}
+
+.cabecalho .ativo {
+    color: var(--cor-destaque-texto);
 }
 
 .icones-cabecalho {
@@ -308,7 +311,7 @@ legend {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 7%;
+    margin: 7% 5%;
     gap: 20%;
 }
 
@@ -318,6 +321,11 @@ legend {
     border-radius: 30px;
     text-align: center;
     border: 2px solid var(--cor-borda-escura);
+}
+
+.produto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--cor-secundaria-texto);
 }
 
 .produto img {
@@ -341,4 +349,65 @@ legend {
     border-radius: 28px;
     padding: 1.2% 1%;
     margin-top: 5%;
+}
+
+.botao-produto:hover {
+    background: linear-gradient(45deg, var(--cor-destaque-botao), var(--cor-secundaria-texto));
+}
+
+.titulo-produtos {
+    text-align: center;
+    margin-top: 4%;
+    color: var(--cor-destaque-texto);
+    font-size: 24px;
+    text-shadow: 8px 8px 14px var(--cor-secundaria-texto);
+    border-bottom: 2px solid var(--cor-destaque-texto);
+    padding-bottom: 5px;
+}
+
+.principal-sobre {
+    color: var(--cor-primaria-texto);
+    margin: 0 2%;
+}
+
+.titulo-sobre {
+    color: var(--cor-destaque-texto);
+    margin: 3%;
+}
+
+.imagem1 {
+    float: right;
+    margin-left: 2%;
+    border-radius: 30px;
+}
+
+.imagem2 {
+    float: left;
+    margin-right: 2%;
+    border-radius: 30px;
+}
+
+.tabela-contato {
+    display: flex;
+    color:var(--cor-primaria-texto);
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 5% 2.8% 0;
+}
+
+.tabela-contato th{
+    color: var(--cor-destaque-botao);
+    font-size: 20px;
+}
+
+.tabela-contato tr{
+    border: 2px solid var(--cor-borda-escura);
+    border-radius: 8px;
+    background-color: var(--cor-fundo-cards);
+}   
+
+.tabela-contato td, .tabela-contato th {
+    padding: 8px 8px;
+    text-align: center;
 }
