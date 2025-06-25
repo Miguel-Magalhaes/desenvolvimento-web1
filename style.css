@@ -29,7 +29,7 @@ body {
     gap: 60px;
     padding: 1% 0;
     background-color: var(--cor-primaria-cabecalho);
-    font-size: 16px;
+    font-size: 1em; 
     position: relative;
 }
 
@@ -60,7 +60,7 @@ body {
 
 .cabecalho i {
     color:var(--cor-primaria-texto);
-    font-size: 18px;
+    font-size: 1.125em; 
     cursor: pointer;
 }
 
@@ -108,7 +108,7 @@ body {
     text-align: center;
     text-decoration: none;
     color:var(--cor-destaque-texto);
-    font-size: 20px;
+    font-size: 1.25em; 
 }
 
 .principal-produtos {
@@ -127,7 +127,7 @@ body {
   
 .secao-titulo h2, .secao-classico-titulo h2 {
     color: var(--cor-destaque-texto);
-    font-size: 20px;
+    font-size: 1.25em;
     letter-spacing: 2px;
     margin: 0.5%;
 }
@@ -161,12 +161,12 @@ body {
 .card-produtos p {
     color: var(--cor-primaria-texto);
     text-align: center;
-    font-size: 16px;
+    font-size: 1em; 
 }
 
 .card-produtos strong {
     color: var(--cor-destaque-texto);
-    font-size: 18px;
+    font-size: 1.125em; 
 }
 
 .secao-produtos-classicos img {
@@ -214,14 +214,14 @@ body {
     text-align: center;
     text-decoration: none;
     color: var(--cor-destaque-botao);
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .formulario {
     color: var(--cor-destaque-texto);
     text-align: start;
     margin: 0 5%;
-    font-size: 14px;
+    font-size: 0.875em; 
 }
 
 fieldset {
@@ -239,14 +239,14 @@ fieldset input {
 
 legend {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .titulo-formulario {
     text-align: start;
     color: var(--cor-destaque-texto);
     margin: 3% 8%;
-    font-size: 24px;
+    font-size: 1.5em; 
 }
 .secao-lojas{
     justify-content: center;
@@ -276,7 +276,7 @@ legend {
     content: "\f54e";
     font-weight: 900;
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 1.5em; 
     margin-right: 12px;
     color: var(--cor-destaque-texto);
 }
@@ -333,13 +333,13 @@ legend {
 }
 
 .produto img + p{
-    font-size: 28px;
+    font-size: 1.75em; 
     color: var(--cor-destaque-texto); 
 } 
 
 .produto p {
     color: #F2E6C9;
-    font-size: 20px;
+    font-size: 1.25em; 
 }
 
 .botao-produto {
@@ -359,7 +359,7 @@ legend {
     text-align: center;
     margin-top: 4%;
     color: var(--cor-destaque-texto);
-    font-size: 24px;
+    font-size: 1.5em;
     text-shadow: 8px 8px 14px var(--cor-secundaria-texto);
     border-bottom: 2px solid var(--cor-destaque-texto);
     padding-bottom: 5px;
@@ -392,13 +392,14 @@ legend {
     color:var(--cor-primaria-texto);
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    margin: 5% 2.8% 0;
+    font-size: 0.875em; 
+    margin: 5% auto 0;
+    width: 90%;
 }
 
 .tabela-contato th{
     color: var(--cor-destaque-botao);
-    font-size: 20px;
+    font-size: 1.25em; 
 }
 
 .tabela-contato tr{
