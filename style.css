@@ -15,11 +15,24 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "Press Start 2P", system-ui;
     background-image: url(assets/backgroung-image.png);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+main {
+    flex: 1;
 }
 
 .cabecalho {
@@ -124,14 +137,14 @@ body {
     justify-content: center;
     gap: 30px;
 }
-  
+ 
 .secao-titulo h2, .secao-classico-titulo h2 {
     color: var(--cor-destaque-texto);
     font-size: 1.25em;
     letter-spacing: 2px;
     margin: 0.5%;
 }
-  
+ 
 .secao-titulo .linha, .secao-classico-titulo .linha {
     flex: 1;
     height: 2px;
@@ -158,6 +171,32 @@ body {
     border: 1px solid var(--cor-borda-escura);
 }
 
+.img-card-switch {
+    width: 200px;
+    height: auto;
+}
+.img-card-ps5 {
+    width: 200px;
+    height: auto;
+}
+.img-card-xboxone {
+    width: 150px;
+    height: auto;
+}
+
+.img-produto-atari,
+    .img-produto-gameboy,
+    .img-produto-ps1,
+    .img-produto-nintendods,
+    .img-produto-xboxone,
+    .img-produto-switch,
+    .img-produto-ps4,
+    .img-produto-ps5 {
+        width: 250px; 
+        height: auto;
+    }
+    
+
 .card-produtos p {
     color: var(--cor-primaria-texto);
     text-align: center;
@@ -171,6 +210,11 @@ body {
 
 .secao-produtos-classicos img {
     padding: 24px 0 28px 0;
+}
+
+.img-secao-classico-atari {
+    width: 380px;
+    height: 480px;
 }
 
 .secao-produtos-classicos {
@@ -193,8 +237,8 @@ body {
 .secao-classico p {
     text-align: left;
     margin: 2% 3%;
-    letter-spacing: 2px;
-    line-height: 1.3;
+    letter-spacing: normal;
+    line-height: 1.5;
 }
 
 .botao-classico {
@@ -213,7 +257,7 @@ body {
 .botao-classico a {
     text-align: center;
     text-decoration: none;
-    color: var(--cor-destaque-botao);
+    color:var(--cor-destaque-botao);
     font-size: 1.25em;
 }
 
@@ -252,11 +296,17 @@ legend {
     justify-content: center;
     color: var(--cor-destaque-texto);
 }
-.tabela{
-    display: flex;
-    color:var(--cor-primaria-texto);
+
+.tabela {
+    color: var(--cor-primaria-texto);
     justify-content: center;
     align-items: center;
+    
+    display: block; 
+    overflow-x: auto; 
+    width: max-content; 
+    margin: 0 auto; 
+    font-size: 0.875em; 
 }
 .tabela th{
     color: var(--cor-destaque-botao);
@@ -269,6 +319,8 @@ legend {
 .tabela td, .tabela th {
     padding: 8px 12px;
     text-align: center;
+    min-width: 150px; 
+    white-space: normal; 
 }
 
 .loja-tabela::before {
@@ -376,6 +428,15 @@ legend {
     text-align: center;
 }
 
+.img-loja2 {
+    width: 450px;
+    height: auto;
+}
+.img-loja1 {
+    width: 450px;
+    height: auto;
+}
+
 .imagem1 {
     float: right;
     margin-left: 2%;
@@ -390,12 +451,11 @@ legend {
 
 .tabela-contato {
     color:var(--cor-primaria-texto);
-    align-items: center;
-    font-size: 0.875em; 
-    margin: 5% auto 0;
-    width: max-content;
-    display: block; 
-    overflow-x: auto
+    font-size: 0.875em;
+    margin: 2% auto 1.5rem;
+    width: max-content; 
+    display: block;
+    overflow-x: auto;
 }
 
 .tabela-contato th{
@@ -414,11 +474,8 @@ legend {
     text-align: center;
 }
 
-
-@media(max-width:800px){
-    
+@media(max-width:960px){
     body{
-        margin: 1rem;
         font-size: 0.9rem;
     }
     .cabecalho{
@@ -428,44 +485,224 @@ legend {
 
     .secao-produtos, .section-produtos {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
     }
+
     .principal-sobre{
         justify-content: center;
         gap: 1rem;
         margin: 0.9rem;
     }
-    .card-produtos  {
+
+    .card-produtos {
         display: flex;
-        width: 30rem;
+        width: 30rem; 
         height: auto;
         align-items: center;
         gap: 1rem;
-        img{
-            width: 50%;
-            height: auto;
-        }
     }
+    
+    .img-card-switch,
+    .img-card-ps5,
+    .img-card-xboxone {
+        width: 70%; 
+        height: auto;
+    }
+
+    .img-secao-classico-atari {
+        width: 100%;
+        height: auto;
+    }
+        
+    .secao-produtos-classicos img {
+    display: none;
+    }
+
+    .img-loja2,
+    .img-loja1 {
+        width: 90%; 
+        height: auto;
+        float: none; 
+        margin: 1rem auto; 
+    }
+
+
     .titulo-sobre{
-       justify-content: center;
+        justify-content: center;
     }
+
     .principal-sobre img {
         padding: 0.9rem;
         width: 100%;
         height: 30rem;
     }
-    .tabela-contato {
+
+    .tabela {
         margin: 1rem auto;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: 100%; 
+        display: block; 
+        overflow-x: auto; 
     }
+    .tabela td, .tabela th {
+        min-width: 120px; 
+    }
+    .tabela-contato {
+        margin: 1rem auto 0; 
+        width: fit-content; 
+        max-width: 95%; 
+        display: block;
+        overflow-x: auto;
+    }
+
     .secao-produtos-classicos {
         flex-direction: column;
         align-items: center;
     }
+
     .secao-classico {
         width: 90%;
     }
+}
+
+@media(max-width:576px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .cabecalho {
+        font-size: 0.6rem;
+        gap: 20px;
+    }
+
+    .cabecalho .icones-cabecalho {
+        margin-left: 2%;
+        gap: 20px;
+    }
+
+    .logo {
+        align-items: center;
+        margin: -15% auto;
+    }
+
+    .titulo-sobre {
+        font-size: 1em;
+        margin: 2% auto;
+    }
+
+    .tabela-contato {
+        margin: 0.8rem auto 0; 
+        width: fit-content; 
+        max-width: 95%; 
+        font-size: 0.75em;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .tabela-contato td, .tabela-contato th {
+        padding: 6px 6px;
+        min-width: 90px; 
+        white-space: normal;
+    }
+    
+    .secao-produtos, .section-produtos, .secao-produtos-classicos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .card-produtos {
+        width: 95%; 
+    }
+
+    .img-card-switch,
+    .img-card-ps5,
+    .img-card-xboxone {
+        width: 80%; 
+        height: auto;
+    }
+
+    .img-secao-classico-atari {
+        width: 80%;
+        height: auto;
+    }
+    
+    .img-loja2,
+    .img-loja1 {
+        width: 70%!important; 
+        height: auto;
+        margin: auto!important;
+    }
+    
+    .imagem1, 
+    .imagem2 {
+        float: none; 
+        display: block; 
+        margin: 1rem auto; 
+    }
+
+    .principal-sobre img { 
+        height: auto;
+        float: none; 
+        margin: 1rem 0; 
+    }
+
+    .principal-sobre p{
+        font-size: 0.8em;
+    }
+
+    .rodape {
+        text-align: center;
+        color: var(--cor-primaria-texto);
+        margin-top: 0; 
+        background-color: var(--cor-primaria-cabecalho);
+        padding: 1.4%;
+    }   
+
+    .tabela {
+        margin: 0.8rem auto;
+        width: 100%;
+        font-size: 0.7em; 
+        display: block;
+        overflow-x: auto;
+    }
+    .tabela td, .tabela th {
+        min-width: 100px; 
+    }
+
+    .secao-classico {
+        width: 95%;
+        margin: 0.9rem auto;
+    }
+    .secao-classico p {
+        letter-spacing: normal;
+        line-height: 1.4;
+    }
+    
+    .secao-produtos-classicos img {
+    display: none;
+}
+
+.tabela-contato{
+    font-size: 0.6em;
+    margin: 0 0 30% 0;
+}
+
+.img-produto-atari,
+    .img-produto-gameboy,
+    .img-produto-ps1,
+    .img-produto-nintendods,
+    .img-produto-xboxone,
+    .img-produto-switch,
+    .img-produto-ps4,
+    .img-produto-ps5 {
+        width: 85%; 
+        height: auto;
+    }
+    
+    .produto { 
+    width: 80%;
+    max-width: 400px; 
+    }
+
 }
