@@ -389,13 +389,13 @@ legend {
 }
 
 .tabela-contato {
-    display: flex;
     color:var(--cor-primaria-texto);
-    justify-content: center;
     align-items: center;
     font-size: 0.875em; 
     margin: 5% auto 0;
-    width: 90%;
+    width: max-content;
+    display: block; 
+    overflow-x: auto
 }
 
 .tabela-contato th{
@@ -413,6 +413,8 @@ legend {
     padding: 8px 8px;
     text-align: center;
 }
+
+
 @media(max-width:800px){
     
     body{

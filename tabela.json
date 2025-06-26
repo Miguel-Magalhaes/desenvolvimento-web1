@@ -1,0 +1,17 @@
+[
+  {
+    "loja": "Paulista - Centro",
+    "email": "arcadesede@email.com",
+    "telefone": "(11)91234-5678"
+  },
+  {
+    "loja": "Itaquera - Leste",
+    "email": "arcadeleste@email.com",
+    "telefone": "(11)93234-5678"
+  },
+  {
+    "loja": "São Caetano - ABC",
+    "email": "arcadeabc@email.com",
+    "telefone": "(11)98765-4321"
+  }
+]

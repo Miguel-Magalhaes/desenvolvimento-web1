@@ -1,26 +1,43 @@
-// Ao carregar a página
-document.addEventListener("DOMContentLoaded", function () {
-  const botao = document.getElementById('submitPerfil');
-  const audio = document.getElementById('audioClique');
+document.addEventListener('DOMContentLoaded', function() {
+    const tabelaCorpo = document.getElementById('tabela-corpo');
 
-  botao.addEventListener('click', function (event) {
-    event.preventDefault(); // Evita o envio do formulário
+    const xhr = new XMLHttpRequest();
 
-    // Captura os valores dos campos
-    const nome = document.formulario.nome.value.trim();
-    const fone = document.formulario.fone.value.trim();
-    const email = document.formulario.mail.value.trim();
-    const senha = document.formulario.senha.value.trim();
+    xhr.open('GET', 'tabela.json', true);
 
-    // Validação simples: verifica se algum campo obrigatório está vazio
-    if (nome && fone && email && senha) {
-        alert(`Perfil criado com sucesso!!!
-            Nome: ${nome}
-            Telefone: ${fone}
-            E-mail: ${email}`);
-            audio.play();
-    } else {
-        alert("Por favor, preencha todos os campos.");
-    }
-  });
+    xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 300) {
+            const data = JSON.parse(xhr.responseText);
+
+            tabelaCorpo.innerHTML = ''; 
+
+            data.forEach(function(item) {
+                const row = document.createElement('tr'); 
+
+                const lojaCell = document.createElement('td');
+                lojaCell.textContent = item.loja;
+                row.appendChild(lojaCell); 
+
+                const emailCell = document.createElement('td');
+                emailCell.textContent = item.email;
+                row.appendChild(emailCell); 
+
+                const telefoneCell = document.createElement('td');
+                telefoneCell.textContent = item.telefone;
+                row.appendChild(telefoneCell); 
+
+                tabelaCorpo.appendChild(row); 
+            });
+        } else {
+            console.error('Erro ao carregar os dados da tabela:', xhr.status, xhr.statusText);
+            tabelaCorpo.innerHTML = '<tr><td colspan="3">Erro ao carregar os dados.</td></tr>';
+        }
+    };
+
+    xhr.onerror = function() {
+        console.error('Erro de rede ao tentar carregar tabela.json');
+        tabelaCorpo.innerHTML = '<tr><td colspan="3">Erro de conexão.</td></tr>';
+    };
+
+    xhr.send();
 });
