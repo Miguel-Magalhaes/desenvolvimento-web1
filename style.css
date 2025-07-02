@@ -417,6 +417,13 @@ legend {
     padding-bottom: 5px;
 }
 
+textarea {
+    width: 95%;
+    max-width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
 .principal-sobre {
     color: var(--cor-primaria-texto);
     margin: 0 2%;
@@ -480,13 +487,15 @@ legend {
     }
     .cabecalho{
         align-items: center;
-        font-size: 0.7rem;
+        font-size: 0.85rem;
+        gap: 30px;
     }
 
     .secao-produtos, .section-produtos {
         display: flex;
         flex-direction: column; 
         align-items: center;
+        gap: 50px;
     }
 
     .principal-sobre{
@@ -527,7 +536,6 @@ legend {
         margin: 1rem auto; 
     }
 
-
     .titulo-sobre{
         justify-content: center;
     }
@@ -539,8 +547,8 @@ legend {
     }
 
     .tabela {
-        margin: 1rem auto;
-        width: 100%; 
+        margin: auto;
+        width: 90%; 
         display: block; 
         overflow-x: auto; 
     }
@@ -571,7 +579,7 @@ legend {
     }
 
     .cabecalho {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         gap: 20px;
     }
 
@@ -588,6 +596,11 @@ legend {
     .titulo-sobre {
         font-size: 1em;
         margin: 2% auto;
+    }
+
+    .botao-produto {
+        padding: 2.5% 4%;
+        margin-bottom: 3%;
     }
 
     .tabela-contato {
@@ -608,7 +621,7 @@ legend {
     .secao-produtos, .section-produtos, .secao-produtos-classicos {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2.5rem;
     }
 
     .card-produtos {
@@ -660,8 +673,8 @@ legend {
     }   
 
     .tabela {
-        margin: 0.8rem auto;
-        width: 100%;
+        margin: auto;
+        width: 90%;
         font-size: 0.7em; 
         display: block;
         overflow-x: auto;
@@ -681,14 +694,19 @@ legend {
     
     .secao-produtos-classicos img {
     display: none;
-}
+    }
 
-.tabela-contato{
+    .titulo-sobre {
+        margin-top: 5%;
+    }
+
+    .tabela-contato{
     font-size: 0.6em;
-    margin: 0 0 30% 0;
-}
+    margin: auto;
+    margin-top: 10%;
+    }
 
-.img-produto-atari,
+    .img-produto-atari,
     .img-produto-gameboy,
     .img-produto-ps1,
     .img-produto-nintendods,
@@ -696,7 +714,7 @@ legend {
     .img-produto-switch,
     .img-produto-ps4,
     .img-produto-ps5 {
-        width: 85%; 
+        width: 60%; 
         height: auto;
     }
     
